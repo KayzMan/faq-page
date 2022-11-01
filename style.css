@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 6rem;
+    background: #eee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    /*padding-top: 1.5rem;*/
+    overflow: auto;
+}
+
+.main .header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.main .header h1{
+    /*font-family: Karumbi, serif;*/
+    /*font-family: "Lato Hairline", sans-serif;*/
+    font-family: Z003, sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    color: goldenrod;
+}
+
+.container{
+    width: 80%;
+    max-width: 800px;
+    /*overflow: auto;*/
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item{
+    width: 100%;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+}
+
+.faq-item .faq-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+    margin: 0 5px;
+    width: 100%;
+    transition: all .5s ease-in;
+}
+
+.faq-item:hover{
+    transform: scale(1.01, 1.01);
+}
+
+.faq-item .faq-header .faq-header-text{
+    font-family: "Ubuntu Light", sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    word-break: break-word;
+}
+
+.faq-item .faq-header .logo{
+    width: 50px;
+    height:50px;
+}
+
+.faq-header .logo img{
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.faq-item .faq-body{
+    padding: 5px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: "Ubuntu Light", sans-serif;
+    color: slategray;
+}
+
+.footer{
+    position: absolute;
+    background: white;
+    color: #000;
+    height: 6rem;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    /*font-weight: lighter;*/
+    font-family: "Lato Hairline", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .main .header h1{
+        font-size: 6rem;
+    }
+     .faq-item .faq-header .faq-header-text{
+        font-size: 40px;
+    }
+    .faq-item .faq-header .logo{
+        width: 60px;
+        height: 60px;
+    }
+     .faq-item .faq-body{
+         font-size: 25px;
+         line-height: 35px;
+     }
+}
+
